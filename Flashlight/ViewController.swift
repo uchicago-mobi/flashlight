@@ -12,15 +12,14 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor.black
+        self.view.backgroundColor = UIColor.white.withAlphaComponent(CGFloat(0.5))
     }
     
-    @IBAction func switchLight(_ sender: Any) {
-        if self.view.backgroundColor == UIColor.black {
-            self.view.backgroundColor = UIColor.white
-        } else {
-            self.view.backgroundColor = UIColor.black
-        }
+    @IBAction func didSlide(_ sender: Any) {
+        guard let dimmer = sender as? UISlider else { return }
+            
+        let dimness = dimmer.value
+        self.view.backgroundColor = UIColor.white.withAlphaComponent(CGFloat(dimness))
     }
     
 }

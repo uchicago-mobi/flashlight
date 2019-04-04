@@ -18,24 +18,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mz3-Ba-mwP">
-                                <rect key="frame" x="163" y="328" width="51" height="31"/>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ygG-DM-ORN">
+                                <rect key="frame" x="13.5" y="328.5" width="348" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="344" id="jnj-fd-MBg"/>
+                                </constraints>
                                 <connections>
-                                    <action selector="switchLight:" destination="BYZ-38-t0r" eventType="valueChanged" id="6Vh-qe-hB1"/>
+                                    <action selector="didSlide:" destination="BYZ-38-t0r" eventType="valueChanged" id="5qO-yo-cWy"/>
                                 </connections>
-                            </switch>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Mz3-Ba-mwP" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ucx-6t-DVg"/>
-                            <constraint firstItem="Mz3-Ba-mwP" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="yJK-sc-rfn"/>
+                            <constraint firstItem="ygG-DM-ORN" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Dxv-Xd-T53"/>
+                            <constraint firstItem="ygG-DM-ORN" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="kQT-iA-9xQ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="65" y="112"/>
+            <point key="canvasLocation" x="64.799999999999997" y="111.99400299850076"/>
         </scene>
     </scenes>
 </document>
