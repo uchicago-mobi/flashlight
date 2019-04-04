@@ -9,24 +9,19 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    @IBOutlet weak var lightSwitch: UISwitch!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.black
-        
-        self.lightSwitch.addTarget(self, action: #selector(switchLight), for: .touchUpInside)
     }
     
-    @objc func switchLight() {
+    @IBAction func switchLight(_ sender: Any) {
         if self.view.backgroundColor == UIColor.black {
             self.view.backgroundColor = UIColor.white
         } else {
             self.view.backgroundColor = UIColor.black
         }
     }
-
-
+    
 }
 
